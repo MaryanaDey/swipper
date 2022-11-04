@@ -57,7 +57,6 @@ body {
 /*------*/
 
 /* Фдекс */
-
 .block {
     display: flex;
 }
@@ -68,14 +67,13 @@ body {
 }
 
 .block__body {
-    padding: 0px 0 px 0px 30px;
+    padding: 0px 0px 0px 30px;
     flex: 1 1 auto;
 
     min-width: 0;
 }
 
-
-
+/*--------*/
 
 .image-slider {
     padding: 30px 0 70px 0;
@@ -91,4 +89,31 @@ body {
 
 .image-slider__image img {
     max-width: 100%;
+}
+
+/* Стрелки */
+
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after {
+    color: #fff;
+    font-size: 80px;
+}
+
+/* Пагинация */
+.image-slider .swiper-pagination {
+    bottom: 0;
+}
+
+/* Буллеты */
+/* .image-slider .swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: #fff;
+} */
+
+.image-slider .swiper-pagination-fraction {
+    font-size: 14px;
+    background-color: #fff;
 }
