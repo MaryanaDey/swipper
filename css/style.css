@@ -112,6 +112,7 @@ body {
     font-size: 14px;
     background-color: #fff;
 }
+
 /*Фракция*/
 .image-slider .swiper-pagination-fraction {
     font-size: 14px;
@@ -120,5 +121,12 @@ body {
 
 /*Прогрессбар*/
 .image-slider .swiper-pagination-progressbar-fill {
+    background-color: #7a956b;
+}
+
+/* Скролл */
+
+.image-slider .swiper-scrollbar-drag {
+    cursor: pointer;
     background-color: #7a956b;
 }
