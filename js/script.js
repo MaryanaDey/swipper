@@ -56,6 +56,28 @@ new Swiper('.image-slider', {
     hashNavigation: {
         //Отслеживать состояние
         watchState: true,
-    }
+    },
 
+    // Кправление клавиатурой
+    keyboard: {
+        //Включить/выключить
+        enabled: true,
+        //Включить/выключить
+        //только когда слайдер 
+        // впределах вьюпорта
+        onlyInViewport: true,
+        //Включить/выключить
+        //кправление клавишами
+        // pageUp, pageDown
+        pageUpDown: true,
+    },
+
+    // Управление колесом мыши
+    mousewheel: {
+        //Чувствительность мыши
+        sensitivity: 1,
+        //Класс обьекта на котором
+        // юкдет спабатывать прокрутка мишью
+        eventsTarget: ".image-slider"
+    },
 });
