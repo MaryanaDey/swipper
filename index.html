@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
     <title>Swipper</title>
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <h1 class="title">Slider Swiper</h1>
+
+        <!--главный контейнер-->
+        <div class="image-slider swiper-container">
+
+            <!--Обязательная оболочка-->
+            <div class="image-slider_wrapper swiper-wrapper">
+
+                <!--Слайды-->
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="" alt="картинка1">
+                    </div>
+                </div>
+
+                <div class="image-slider__slide swiper-slide">
+
+                    <div class="image-slider__image">
+                        <img src="" alt="картинка2">
+                    </div>
+                </div>
+
+                <div class="image-slider__slide swiper-slide">
+
+                    <div class="image-slider__image">
+                        <img src="" alt="картинка3">
+                    </div>
+                </div>
+
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="" alt="картинка4">
+                    </div>
+                </div>
+
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="" alt="картинка5">
+                    </div>
+                </div>
+
+                <div class="image-slider__slide swiper-slide">
+                    <div class="image-slider__image">
+                        <img src="" alt="картинка6">
+                    </div>
+                </div>
+
+
+                <!--и так далее-->
+            </div>
+            <!--добавляем если нам надо стрелки кправления-->
+            <div class="siper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!--добавляем если нам нажна пагинация-->
+            <div class="swiper-pagination"></div>
+
+            <!---добавляем если нам нужна полоса прокрутки-->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
