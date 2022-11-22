@@ -196,22 +196,49 @@ new Swiper('.image-slider', {
         //Тень
         slideShadows: true,
     },
+
     */
 
-
-    //Брейк поинты (адаптив)
-    //Ширина экрана
-    breakepoints: {
-        320: {
+    /*
+    // Брейк поинты (адаптив)
+    // Ширина экрана
+    breakpoints: {
+        '@0.75': {
             slidesPerView: 1,
         },
-        480: {
+        '1.00': {
             slidesPerView: 2
         },
-        992: {
+        '@1.50': {
             slidesPerView: 3,
         }
     },
-    
+    */
+
+    //Отключить перезагрузка картинок
+    preloadImages: false,
+    //Lazy Loading
+    //(подгрузка картинок)
+    lazy: {
+        //Подгружать на старте
+        //переключение слайда
+        loadOnTransitionStart: false,
+        //Подгрузить предыдущую
+        //и следующую картинки
+        loadPrevNext: false,
+    },
+    //Слежка за видимыми слайдами
+    watchSlidesProgress: true,
+    //Доюавление класса видимым слайдам
+    watchSlidesVisibility: true,
+
+    //Зум картинки
+    zoom: {
+        //Минимальное увеличение 
+        maxRatio: 5,
+        //Минимальное увеличение 
+        minRatio: 1,
+    },
+
 });
 
