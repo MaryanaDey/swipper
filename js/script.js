@@ -77,7 +77,141 @@ new Swiper('.image-slider', {
         //Чувствительность мыши
         sensitivity: 1,
         //Класс обьекта на котором
-        // юкдет спабатывать прокрутка мишью
-        eventsTarget: ".image-slider"
+        // будет спабатывать прокрутка мишью
+        // eventsTarget: ".image-slider"
     },
+
+    // Автовысота
+    // autoHeight: true,
+    autoHeight: false,
+
+
+    // Количество слайдов для показов
+    // slidesPerView: 'auto',
+    slidesPerView: 3,
+
+
+    // Отклбчение функционала
+    // если слайдов меньше чем нужно
+    watchOverflow: true,
+
+    // Отступ между слайдами
+    spaceBetween: 30,
+
+    // Количество пролистываемых слайдов
+    slidesPerGroup: 1,
+
+    //Активный слайд по центру
+    centeredFlides: false,
+
+    // Стартовый слайд
+    initialSlide: 0,
+
+    // Мультирядность
+    slidesPerColumn: 1,
+
+    // Бесконечный слайдер
+    //loop: true,
+    loop: false,
+
+    // Количество дублирующих слайдов
+    loopedSlides: 0,
+
+    // Свободный режим
+    freeMode: true,
+
+    // Автопрокрутка
+    // autoplay: {
+    // Пауза между прокруткой
+    //  delay: 1000,
+    // Закончить на последнем слайде
+    //  stopOnLastSlide: true,
+    // Отключить после ручного переключения
+    // disableOnInteraction: false
+    // },
+
+    // Скорость
+    speed: 800,
+
+    // Вертикальный слайдер
+    direction: 'horizontal',
+
+    // Эффекты переключения слайдов
+    //Листание
+    effect: 'slide',
+
+    /*
+    // Эффекты переключения слайдов
+    //Смена прозрачности
+    effect: 'fade',
+ 
+    //Дополнение к fade
+    fadeEffect: {
+        //Паралельная
+        //смена прозрачности
+        crossFade: true
+    },
+*/
+
+    /*
+    // Эффекты переключения слайдов
+    //Переворот
+    effect: 'flip',
+
+    //Дополнение k flip
+    flipEffect: {
+        //Тень
+        slideShadows: true,
+        //Показ только аутивного слайда
+        limitRotation: true
+    },
+*/
+
+    /*
+    // Эффекты переключения слайдов
+    //Куб
+    effect: 'cube',
+
+    //Дополнение к cube
+    cubeEffect: {
+        //настройки тени
+        slideShadows: true,
+        shadow: true,
+        shadowOffset: 20,
+        shadowScale: 0.94
+    },
+*/
+
+    /*
+    // Эффекты переключения слайдов
+    // Эффект потока
+    effect: 'coverflow',
+
+    //Дополнение с coverflow
+    coverflowEffect: {
+        //угол
+        rotate: 20,
+        //Наложение
+        stretch: 50,
+        //Тень
+        slideShadows: true,
+    },
+    */
+
+
+    //Брейк поинты (адаптив)
+    //Ширина экрана
+    breakepoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        480: {
+            slidesPerView: 2
+        },
+        992: {
+            slidesPerView: 3,
+        }
+    },
+    
 });
+
